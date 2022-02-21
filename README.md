@@ -21,9 +21,9 @@ new.packages <- required.packages[!(required.packages %in% installed.packages()[
 if(length(new.packages)>0) install.packages(new.packages)
 
 ## install packages from Bioconductor if not installed
-if(!c('DESeq2' %in% installed.packages()) {
+if(!c('DESeq2',"DegNorm" %in% installed.packages()) {
     if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
-    BiocManager::install(c("DESeq2"))
+    BiocManager::install(c("DESeq2","DegNorm"))
 
 ## install some dependencies for MOVICS from source
 
