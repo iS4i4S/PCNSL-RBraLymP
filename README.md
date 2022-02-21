@@ -48,7 +48,7 @@ heatmap.plus needs to be downloaded from [source here](https://cran.r-project.or
 The complete guide for installing MOVICS (may you find troubles) can be found [here](https://xlucpu.github.io/MOVICS/MOVICS-VIGNETTE.html#Section.2)
 
 ## The RBraLymP (RNA-based Brain Lymphoma Profiler) algorithm
-The current code takes an RNA expression matrix (gene names as rows; samples as columns) as input from either FFPE (DegNorm normalization of reads is highly recommended, see [Supplementary Appendix](link) from our article for more information) or FF tissue. The output is a two column matrix with the "Sample ID" and the "Cluster significant [CS] group". Downstream analysis for evaluating clinical impact using univariate-multivariate models is also given.
+The current code takes an RNA expression matrix (gene names as rows; samples as columns) as input from either FFPE (DegNorm paraffin degradation correction of reads is highly recommended, see [Supplementary Appendix](link) from our article for more information) or FF tissue. The output is a two column matrix with the "Sample ID" and the "Cluster significant [CS] group". Downstream analysis for evaluating clinical impact using univariate-multivariate models is also given.
 
 [Complete tutorial for RBraLymP is avaliable here](Insert_link)
 
