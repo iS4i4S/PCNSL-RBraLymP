@@ -8,10 +8,44 @@ Primary central nervous system lymphoma (PCNSL) is a rare and distinct entity wi
 
 ## Citation
 If you use any data or code derived from this study, please cite:
+
 Hernandez-Verdin, I. et al. Molecular and clinical diversity in primary central nervous system lymphoma. (DOI and journal pending...)
 
 ## Instructions (software requirements)
-...
+It is essential that you have R 4.0.1 or above already installed on your computer or server. The main tools needed for RBraLymP are implemented in the R package [MOVICS](https://github.com/xlucpu/MOVICS). For all of the steps of the pipeline to work, make sure that you have upgraded Bioconductor to newest version (BiocManager v3.11). After you have R and Bioconductor installed properly, you can start to install MOVICS and other needed packages by the following code into your R session:
+
+```r
+## check for missing required packages, install them
+required.packages <- c('data.table','ggplot2','cowplot','RColorBrewer','ggsignif','binom','scales','forestplot','ggpubr','survminer','reshape2','ggrepel','Hmisc','Rcpp','pheatmap','ComplexHeatmap','stats','ggforestplot','rmarkdown','survival')
+new.packages <- required.packages[!(required.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)>0) install.packages(new.packages)
+
+## install packages from Bioconductor if not installed
+if(!c('DESeq2' %in% installed.packages()) {
+    if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+    BiocManager::install(c("DESeq2"))
+
+## install some dependencies for MOVICS from source
+
+#### heatmap.plus
+install.packages("heatmap.plus_1.3.tar.gz", repos = NULL, type = "source")
+
+#### SNFtool
+devtools::install_github("maxconway/SNFtool")
+
+## install MOVICS
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+if (!require("devtools")) 
+    install.packages("devtools")
+devtools::install_github("xlucpu/MOVICS")
+    
+}
+ ```
+
+heatmap.plus needs to be downloaded from [source here](https://cran.r-project.org/src/contrib/Archive/heatmap.plus/)
+
+The complete guide for installing MOVICS (may you find troubles) can be found [here](https://xlucpu.github.io/MOVICS/MOVICS-VIGNETTE.html#Section.2)
 
 ## The RBraLymP (RNA-based Brain Lymphoma Profiler) algorithm
 The current code takes an RNA expression matrix (gene names as rows; samples as columns) as input from either FFPE (DegNorm normalization of reads is highly recommended, see [Supplementary Appendix](link) from our article for more information) or FF tissue. The output is a two column matrix with the "Sample ID" and the "Cluster significant [CS] group". Downstream analysis for evaluating clinical impact using univariate-multivariate models is also given.
