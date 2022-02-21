@@ -50,7 +50,7 @@ The complete guide for installing MOVICS (may you find troubles) can be found [h
 ## The RBraLymP (RNA-based Brain Lymphoma Profiler) algorithm
 The current code takes an RNA expression matrix (gene names as rows; samples as columns) as input from either FFPE (DegNorm paraffin degradation correction of reads is highly recommended, see [Supplementary Appendix](link) from our article for more information) or FF tissue. The output is a two column matrix with the "Sample ID" and the "Cluster significant [CS] group". Downstream analysis for evaluating clinical impact using univariate-multivariate models is also given.
 
-[Complete tutorial for RBraLymP is avaliable here](https://github.io/iS4i4S/PCNSL-RBraLymP/blob/main/Docs/RBraLymP.html)
+[Complete tutorial for RBraLymP is avaliable here](https://iS4i4S.github.io/PCNSL-RBraLymP/blob/main/Docs/RBraLymP.html)
 
 ## Data avaliability
 Raw WES, RNA-seq, DNA methylation, and clinical data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number [EGAS...pending](insert link). 
