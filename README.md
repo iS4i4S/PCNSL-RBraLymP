@@ -12,7 +12,7 @@ If you use any data or code derived from this study, please cite:
 Hernandez-Verdin, I. et al. Molecular and clinical diversity in primary central nervous system lymphoma. (DOI and journal pending...)
 
 ## Instructions (software requirements)
-It is essential that you have R 4.0.1 or above already installed on your computer or server. The main tools needed for RBraLymP are implemented in the R package [MOVICS](https://github.com/xlucpu/MOVICS). For all of the steps of the pipeline to work, make sure that you have upgraded Bioconductor to newest version (BiocManager v3.11). After you have R and Bioconductor installed properly, you can start to install MOVICS and other needed packages by the following code into your R session:
+It is essential that you have R 4.0.1 or above already installed on your computer or server. The main tools needed for RBraLymP are implemented in the R package [MOVICS](https://github.com/xlucpu/MOVICS). For all of the steps of the pipeline to work, make sure that you have upgraded Bioconductor to version >= v3.11. After you have R and Bioconductor installed properly, you can start to install MOVICS and other needed packages by the following code into your R session:
 
 ```r
 ## check for missing required packages, install them
