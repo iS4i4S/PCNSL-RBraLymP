@@ -9,7 +9,7 @@ Primary central nervous system lymphoma (PCNSL) is a rare and distinct entity wi
 ## Citation
 If you use any data or code derived from this study, please cite:
 
-Hernandez-Verdin, I. et al. Molecular and clinical diversity in primary central nervous system lymphoma. (DOI and journal pending...)
+Hernandez-Verdin, I. et al. Molecular and clinical diversity in primary central nervous system lymphoma. Annals of Oncology (2022). [10.1016/j.annonc.2022.11.002](https://www.annalsofoncology.org/article/S0923-7534(22)04732-9/fulltext).
 
 ## Instructions (software requirements)
 It is essential that you have R 4.0.1 or above already installed on your computer or server. The main tools needed for RBraLymP are implemented in the R package [MOVICS](https://github.com/xlucpu/MOVICS). For all of the steps of the pipeline to work, make sure that you have upgraded Bioconductor to version >= v3.11. After you have R and Bioconductor installed properly, you can start to install MOVICS and other needed packages by the following code into your R session:
@@ -53,7 +53,7 @@ The current code takes an RNA expression matrix (gene names as rows; samples as 
 [Complete tutorial for RBraLymP is avaliable here](http://htmlpreview.github.io/?https://github.com/iS4i4S/PCNSL-RBraLymP/blob/main/Docs/RBraLymP.html)
 
 ## Data avaliability
-Raw WES, RNA-seq, DNA methylation, and clinical data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number [EGAS...pending](insert link). 
+Raw WES, RNA-seq, DNA methylation, and clinical data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number EGAD00001008706. 
 
 ## Contact
 E-mail any questions to [isaias.hernandez@icm-institute.org].
