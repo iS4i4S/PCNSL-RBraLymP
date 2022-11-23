@@ -53,7 +53,7 @@ The current code takes an RNA expression matrix (gene names as rows; samples as 
 [Complete tutorial for RBraLymP is avaliable here](http://htmlpreview.github.io/?https://github.com/iS4i4S/PCNSL-RBraLymP/blob/main/Docs/RBraLymP.html)
 
 ## Data avaliability
-Raw WES, RNA-seq, DNA methylation, and clinical data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number EGAD00001008706. 
+Raw WES, RNA-seq, DNA methylation, and clinical data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number [EGAS00001006191](https://ega-archive.org/studies/EGAS00001006191). 
 
 ## Contact
 E-mail any questions to [isaias.hernandez@icm-institute.org].
